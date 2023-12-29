@@ -9,8 +9,13 @@ function process(){
     }
     return innerProcess;
 }
-let res = process();
-console.log(res);
-console.log("Calling first time ",res());
-console.log("Calling Second time ",res());
-console.log("Calling Third time ",res());
+// let res = process();
+// console.log(res);
+// console.log("Calling first time ",res());
+// console.log("Calling Second time ",res());
+// console.log("Calling Third time ",res());
+
+// Iterators in JavaScript
+let arr = [1,2,3,4,5];
+iterator = arr[Symbol.iterator]();
+console.log(iterator.next());
